@@ -61,3 +61,22 @@ if (temMontaria = true) {
 } if (xp >= 1000000) {
     console.log("Consegue seguir, tem xp sulficiente.");
 }
+
+//Capítulo 2:
+console.log("===========================================");
+console.log("🛡️ Capítulo 2");
+console.log("===========================================");
+console.log("Enquanto buscava o castelo perdido, encontrou nos céus algo incomum. Uma cidade magica de elfos, super tecnológicos.");
+console.log("Lá ele buscava dicas de onde encontrar o castelo perdido");
+console.log(`os elfos falam que a entrada de humanos é proibido. Inclusive, a maioria deles nunca nem tinha visto uma raça diferente da deles.`);
+console.log("Disseram que se ele quisesse emtrar na ilha perdida de elfos ele precisaria fazer 2 testes muito dificeis. Um de força e outro inteligência");
+console.log("Terá que ganhar do elfo mais forte da ilha em uma queda de braço, usando apenas força bruta, e terá que responder uma charada")
+if (forcaBruta > 100000000) {
+    console.log("Você conseguiu vencer, passou do primeiro desafio.")
+} else {
+    console.log("Você foi sentenciado a morte no Buraco do sol, uma abertura que serve para jogar traidores e intrusos.")
+} if (inteligência > 100000) {
+    console.log("Conseguiu responder a charada e assim poderá ter respostas e entrar na cidade.")
+} else {
+    console.log("Você foi sentenciado a morte e terá a cabeça decaptada.")
+}
