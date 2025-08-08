@@ -1,10 +1,10 @@
 //Atributos do personagem:
 const nome = "Arthur Targaryen";
 let classe = "Rei Mago"; //Maior classe possivel
-let racaPersonagem = "Humano"
+let racaPersonagem = "Humano";
 let nivel = 10000000000000000000000000000000000;
 let vida = 100000000000000000000;
-let inteligência = 1000000
+let inteligência = 1000000;
 let moedas = 10000000000;
 let xp = 100000000000000000;
 
@@ -12,7 +12,7 @@ let xp = 100000000000000000;
 let manaMaxima = 50000000000;
 let forcaBruta = 150000000000000000;
 let defesa = 124000000;
-let agilidade = 12000;
+let agilidade = 12000000;
 
 // Estado atual da história:
 let localAtual = "Casa do Rei Demônio";
@@ -31,9 +31,9 @@ const RARIDADEARMADURA = "Divino";
 const MATERIAL = "Aço Valiriano";
 
 //Montaria:
-let temMontaria = true;
-let NOME_MONTARIA = "Dracarys";
-let racaMontaria = "Dragão"
+const TEM_MONTARIA = true;
+const NOME_MONTARIA = "Dracarys";
+const RACA_MONTARIA = "Dragão"
 let forcaMontaria = 1000000000000000;
 
 //Prólogo:
@@ -78,5 +78,41 @@ if (forcaBruta > 100000000) {
 } if (inteligência > 100000) {
     console.log("Conseguiu responder a charada e assim poderá ter respostas e entrar na cidade.")
 } else {
-    console.log("Você foi sentenciado a morte e terá a cabeça decaptada.")
+    console.log("Você foi sentenciado a morte e terá a cabeça cortada pela espada do rei.")
 }
+
+//Capitulo 3:
+console.log("===========================================");
+console.log("🔪 CAPÍTULO 3");
+console.log("===========================================");
+console.log(`Depois de ${nome} passar pelos desafios, os elfos falaram a direção e deram também a chave do castelo. `);
+console.log(`Ele saiu imediatamente com seu enorme ${RACA_MONTARIA} ${NOME_MONTARIA}. `);
+console.log(`Então quando ele chega se depara com um enorme Minotauro protegendo o castelo, e disse que para conquistar o castelo ele precisaria derrotalo, porém naquele lugar todos os atributos sao divididos por 1000 e nao é possivel usar qualque tipo de magia.`);
+console.log("O minotauro lhe faz uma perguta... Você aceita o desafio ou vai fugir??");
+let opcaoPersonagem = true;
+if (opcaoPersonagem = true) {
+    console.log("Então você tem a audacia de aceitar meu desafio... e perderá hahahaha");
+} else {
+    console.log("Hmmmm, foi uma sabia escolha. vá para casa e aproveite seus dias");
+}
+
+console.log("Vamos ao combate humano!!")
+
+inteligência /= 1000;
+forcaBruta /= 1000;
+defesa /= 1000;
+agilidade /= 1000;
+
+if (inteligência <= 1000 && forcaBruta <= 100000 && defesa <= 10000 && agilidade <= 1000) {
+    console.log("Consegue derrotar com facilidade e obtem o castelo e o minotauro como novo servo!");
+} else if (inteligência <= 600 && forcaBruta <= 54500 && defesa <= 5000 && agilidade <= 600) {
+    console.log("Consegue derrotar o Minotauro mas com dificuldade, e ele nao aceita ser seu servo.");
+} else {
+    console.log(`A jornada de ${nome} tem seu fim trágico, morto pelo Minotauro.`);
+}
+
+console.log("Após conseguir o castelo ele leva ele para os céus de seu reino, e mora la feliz com sua familía");
+console.log(`E essa foi a história do incrivel ${nome}`);
+console.log("===========================================");
+console.log("FIM");
+console.log("===========================================");
